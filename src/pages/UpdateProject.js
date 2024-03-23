@@ -35,7 +35,7 @@ const UpdateProject = () => {
     };
     setLoading(true);
     axios
-      .put(`https://project-management-backend-j0cz.onrender.com/projects${id}`, data)
+      .put(`https://project-management-backend-j0cz.onrender.com/projects/${id}`, data)
       .then(() => {
         setLoading(false);
         navigate('/');
