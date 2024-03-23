@@ -14,7 +14,7 @@ const UpdateProject = () => {
 
   useEffect(() => {
     setLoading(true);
-    axios.get(`https://project-management-backend-j0cz.onrender.com/projects${id}`)
+    axios.get(`https://project-management-backend-j0cz.onrender.com/projects/${id}`)
     .then((response) => {
         setMembers(response.data.members);
         setDays(response.data.days)
