@@ -12,7 +12,7 @@ const ShowProject = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`https://project-management-backend-j0cz.onrender.com/projects${id}`)
+      .get(`https://project-management-backend-j0cz.onrender.com/projects/${id}`)
       .then((response) => {
         setProject(response.data);
         setLoading(false);
