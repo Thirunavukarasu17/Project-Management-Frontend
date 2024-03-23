@@ -12,7 +12,7 @@ const DeleteProject = () => {
   const handleDeleteProject = () => {
     setLoading(true);
     axios
-      .delete(`https://project-management-backend-j0cz.onrender.com/projects${id}`)
+      .delete(`https://project-management-backend-j0cz.onrender.com/projects/${id}`)
       .then(() => {
         setLoading(false);
         navigate('/');
